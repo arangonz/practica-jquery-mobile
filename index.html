@@ -15,17 +15,29 @@
 <body>
     <div data-role='page' id='login' data-theme='b'>
 
-        <div data-role='header'>
+        <div data-role='header' id='header'>
             <h1>Login</h1>
         </div>
 
         <div data-role='content'>
-            <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
-            <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
-            <input type="submit" name="acceder" id="acceder" data-clear-btn="true">
+            <form >
+                <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
+                <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
+                <input type="submit" name="acceder" id="acceder" data-icon="lock" value='Acceder'>
+            </form>
         </div>
 
     </div>
+
+    <div data-role='page' id='curso' data-theme='b'>
+
+        <div data-role='header' id='header'>
+            <h1>Seleccione un curso y un alumno</h1>
+        </div>
+
+
+    </div>
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="scripts/main.js"></script>
