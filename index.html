@@ -15,7 +15,7 @@
 <body>
     <div data-role='page' id='login' data-theme='b'>
 
-        <div data-role='header' id='header'>
+        <div data-role='header' data-position="fixed" id='header'>
             <h1>Login</h1>
         </div>
 
@@ -23,26 +23,50 @@
             <form>
                 <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
                 <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
-                <a href="#alumno" id="acceder" name="acceder" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-lock">Acceder</a>
+                <a href="#selAlumno" id="acceder" name="acceder" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-lock">Acceder</a>
             </form>
+        </div>
+        <div data-role='footer' id='footer' data-position="fixed">
+            <a href="#login" id="salir" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
         </div>
 
     </div>
 
-    <div data-role='page' id='alumno' data-theme='b'>
+    <div data-role='page' id='selAlumno' data-theme='b'>
 
-        <div data-role='header' id='header'>
+        <div data-role='header' id='header' data-position="fixed">
             <h1>Alumno</h1>
         </div>
         <div data-role='content'>
-            <form>
-                <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
-                <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
-                <a href="#alumno" id="acceder" name="acceder" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-lock">Acceder</a>
-            </form>
+            <select name="curso" id="curso" data-native-menu="false" data-icon="grid" data-iconpos="left">
+                <option>Seleccione un Curso</option>
+                <optgroup label="Informática y Comunicaciones">
+                    <option value="smr">Sistemas Microinformáticos y Redes</option>
+                    <option value="asir">Administración de sistemas Informáticos en Red </option>
+                    <option value="dam">Desarrollo de Aplicaciones Multiplataforma</option>
+                    <option value="daw">Desarrollo de Aplicaciones Web</option>
+                </optgroup>
+                <optgroup label="Imagen y Sonido">
+                    <option value='li'>Laboratorio de Imagen</option>
+                    <option value='vds'>Video Disc-Jockey y Sonido</option>
+                    <option value='aje'>Animaciones 3D, Juegos y Entornos Interactivos</option>
+                    <option value='icti'>Iluminación, Captación y Tratamiento de Imagen</option>
+                    <option value='pae'>Producción de Audiovisuales y Espectáculos</option>
+                    <option value='rpae'>Realización de Proyetcos Audiovisuales y Espectáculos</option>
+                </optgroup>
+            </select>
+            <select name="alumno" id="alumno" data-native-menu="false">
+                <option>Seleccione un Alumno</option>
+                <option value='1'>Alumno 1</option>
+                <option value='2'>Alumno 2</option>
+                <option value='3'>Alumno 3</option>
+                <option value='4'>Alumno 4</option>
+            </select>
+            <div id='infoAlumno'>
+            </div>
         </div>
 
-        <div data-role='footer' id='footer'>
+        <div data-role='footer' id='footer' data-position="fixed">
             <a href="#login" id="salir" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
         </div>
     </div>
