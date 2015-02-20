@@ -20,22 +20,31 @@
         </div>
 
         <div data-role='content'>
-            <form >
+            <form>
                 <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
                 <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
-                <input type="submit" name="acceder" id="acceder" data-icon="lock" value='Acceder'>
+                <a href="#alumno" id="acceder" name="acceder" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-lock">Acceder</a>
             </form>
         </div>
 
     </div>
 
-    <div data-role='page' id='curso' data-theme='b'>
+    <div data-role='page' id='alumno' data-theme='b'>
 
         <div data-role='header' id='header'>
-            <h1>Seleccione un curso y un alumno</h1>
+            <h1>Alumno</h1>
+        </div>
+        <div data-role='content'>
+            <form>
+                <input type="text" name="usuario" id="usuario" placeholder='Usuario' data-clear-btn="true">
+                <input type="password" name="contrasena" id="contrasena" placeholder='Contraseña' data-clear-btn="true">
+                <a href="#alumno" id="acceder" name="acceder" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-lock">Acceder</a>
+            </form>
         </div>
 
-
+        <div data-role='footer' id='footer'>
+            <a href="#login" id="salir" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+        </div>
     </div>
 
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>

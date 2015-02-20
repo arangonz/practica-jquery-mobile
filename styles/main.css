@@ -1,7 +1,10 @@
-#header {
+#header, #footer {
     background-color: #E45614;
 }
 #acceder {
-    background-color: #FFFFFF;
-    opacity: 0.2
+    background-color: #6B6E68;
+}
+#salir {
+    margin-left: 50%;
+
 }
