@@ -27,7 +27,6 @@
             </form>
         </div>
         <div data-role='footer' id='footer' data-position="fixed">
-            <a href="#login" id="salir" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
         </div>
 
     </div>
@@ -38,8 +37,8 @@
             <h1>Alumno</h1>
         </div>
         <div data-role='content'>
-            <select name="curso" id="curso" data-native-menu="false" data-icon="grid" data-iconpos="left">
-                <option>Seleccione un Curso</option>
+            <label for="curso" class="select">Seleccione un Curso:</label>
+            <select name="curso" id="curso" data-native-menu="false" data-icon="false">
                 <optgroup label="Informática y Comunicaciones">
                     <option value="smr">Sistemas Microinformáticos y Redes</option>
                     <option value="asir">Administración de sistemas Informáticos en Red </option>
@@ -55,15 +54,31 @@
                     <option value='rpae'>Realización de Proyetcos Audiovisuales y Espectáculos</option>
                 </optgroup>
             </select>
-            <select name="alumno" id="alumno" data-native-menu="false">
-                <option>Seleccione un Alumno</option>
+            <label for="alumno" class="select">Seleccione un Alumno:</label>
+            <select name="alumno" id="alumno" data-native-menu="false" data-icon="false">
                 <option value='1'>Alumno 1</option>
                 <option value='2'>Alumno 2</option>
                 <option value='3'>Alumno 3</option>
                 <option value='4'>Alumno 4</option>
             </select>
-            <div id='infoAlumno'>
+            <div id="evaluar">
+                <a href="#evaluacion" class="ui-btn ui-btn-inline ui-corner-all ui-icon-action ui-btn-icon-left">Evaluar</a>
             </div>
+        </div>
+
+        <div data-role='footer' id='footer' data-position="fixed">
+            <a href="#login" id="salir" class="ui-btn ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-notext"></a>
+        </div>
+    </div>
+
+    <div data-role='page' id='evaluacion' data-theme='b'>
+
+        <div data-role='header' id='header' data-position="fixed">
+            <h1>Evaluación</h1>
+        </div>
+        <div data-role='content'>
+
+
         </div>
 
         <div data-role='footer' id='footer' data-position="fixed">
